@@ -1,13 +1,16 @@
 def main():
-    # YOUR CODE GOES HERE
-    # Please take input and print output to standard input/output (stdin/stdout)
-    # E.g. 'input()/raw_input()' for input & 'print' for output
-    A = int(input())
-    prime = "YES"
+    num = int(input())
+
+
+    # brute force
+    if num<1:
+        print(False)
+    prime = True
     i = 2
-    while (i < A):
-        if A % i == 0:
-            prime = "NO"
+    while (i <= num/2):
+        if num % i == 0:
+            prime = False
+            break
         i += 1
     print(prime)
 

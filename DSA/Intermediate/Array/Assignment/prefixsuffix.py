@@ -25,3 +25,5 @@ for i in range(B):
     ans=max[ans, curr]
 print(max)
 
+
+
