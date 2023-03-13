@@ -6,6 +6,8 @@ def conhost(host):
     user="user"
     pwd="pwd"
     port=22
+
+
     sshcon=paramiko.SSHClient()
     sshcon.connect(host,user,pwd,port)
     return sshcon
